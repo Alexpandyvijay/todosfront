@@ -1,0 +1,66 @@
+.display {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-height: max-content;
+    width: 100%;
+}
+header {
+    display: flex;
+    background-color: blue;
+    width: 100%;
+}
+header > h1 {
+    color: white;
+    width: 50%;
+    margin: 10px;
+    text-align: right;
+    padding: 0px 20px;
+}
+section {
+    display: flex;
+    width: 100%;
+}
+section > .side-bar {
+    width: 30%;
+    height: 100vh;
+    background-color: skyblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.side-bar > h3 {
+    color: white;
+    font-size: 30px;
+}
+.side-bar > .history{
+    height: 55vh;
+}
+.table {
+ width: 70%;
+}
+.table > button {
+    margin-left: 30px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto auto;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+th {
+    background-color: blue;
+    color: white;
+    font-size: larger;
+    font-weight: 500;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
