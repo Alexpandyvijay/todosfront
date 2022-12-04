@@ -18,7 +18,7 @@ export default function SignUp() {
     const onSubmitHandler= async (e)=>{
         e.preventDefault();
         if(userData.password===userData.confirmPassword){
-            let res = await axios.post('http://localhost:5000/signup',{
+            let res = await axios.post('https://todosbackend.onrender.com/signup',{
                 'userId' : userData.userId,
                 'password' : userData.password
             });
